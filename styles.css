@@ -1,0 +1,138 @@
+* {
+   	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+  	padding: 0px;
+  	box-sizing: border-box;
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	height: 100%
+}
+
+#crt {
+	width:100%;
+	height:100%;
+}
+
+
+/* HEADER */
+
+#header {
+	text-align:center;
+	width:100%;
+	background-color:#0096a9;
+	font-family: 'Charmonman', cursive;
+	color:#E0D330;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: sticky;
+	top:0%;
+	z-index: 2;
+}
+
+#header img {
+	width:5%;
+	border-right: 3px solid #E0D330;
+	padding-right: 1em;
+}
+
+#header h1 {
+	margin-left: 0.5em;
+}
+
+/* MENU */
+
+#menu {
+	float:left;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+	width:15%;
+	background-color: #0096a9;
+}
+
+#menuLinks {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	gap: 2em;
+	font-size: larger;
+	font-weight: bolder;
+	position: sticky;
+	top: 50%;
+}
+
+#menuLinks a:link, #menuLinks a:visited {
+	text-decoration: none;
+	color:#E0D330;
+}
+
+#menuLinks a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+#menuLinks a:active {
+	text-decoration: none;
+	color:black;
+}
+
+/* CONTENT */
+
+#content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+	clear:both;
+	position: relative;
+  	width: 100%;
+	text-align: center;
+	background-color: #0096a9;
+	background-image: url("images/duelingScissors.svg");
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: 50%;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 6em;
+	color: #E0D330;
+}
+
+#footer img {
+	width: 1.3em;
+}
+
+#footer a:link, #footer a:visited {
+	text-decoration: none;
+	color:#E0D330;
+}
+
+#footer a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+#footer a:active {
+	text-decoration: none;
+	color:black;
+}
