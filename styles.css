@@ -1,11 +1,11 @@
 * {
    	margin: 0px;
-    	padding: 0px;
-    	box-sizing: border-box;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
-	height: 100%;
+	height: 100vh;
 }
 
 body {
@@ -13,7 +13,6 @@ body {
   	padding: 0px;
   	box-sizing: border-box;
 	font-family: "Avenir Next", "Avenir", sans-serif;
-	height: 100%
 }
 
 #crt {
@@ -58,9 +57,10 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	height:100%;
+	height:100vmax;
 	width:15%;
 	background-color: #0096a9;
+	overflow: hidden;
 }
 
 #menuLinks {
@@ -70,7 +70,7 @@ body {
 	gap: 2em;
 	font-size: larger;
 	font-weight: bolder;
-	position: sticky;
+	position: fixed;
 	top: 50%;
 }
 
@@ -93,16 +93,46 @@ body {
 
 #content {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+	flex-direction: column;
+	height: 100vmax;
 }
 
+#contentSec1, #contentSec3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: large;
+	height: 33.3%;
+	padding: 2em;
+	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
+}
+
+#contentSec2 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	font-size: large;
+	text-align: right;
+	height: 33.4%;
+	padding: 2em;
+	gap: 0.5em;
+	background-color: lightgrey;
+	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
+}
+
+#text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
 /* FOOTER */
 
 #footer {
 	clear:both;
 	position: relative;
+	top: 100%;
   	width: 100%;
 	text-align: center;
 	background-color: #0096a9;
