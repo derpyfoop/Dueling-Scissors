@@ -4,22 +4,12 @@
     box-sizing: border-box;
 }
 
-html {
-	height: 100vh;
-}
-
 body {
 	margin: 0px;
   	padding: 0px;
   	box-sizing: border-box;
 	font-family: "Avenir Next", "Avenir", sans-serif;
 }
-
-#crt {
-	width:100%;
-	height:100%;
-}
-
 
 /* HEADER */
 
@@ -95,6 +85,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vmax;
+	background-image: url("images/background.jpg");
+	background-repeat: repeat;
+	background-size: cover;
 }
 
 #contentSec1, #contentSec3 {
@@ -106,6 +99,7 @@ body {
 	height: 33.3%;
 	padding: 2em;
 	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
+	background-color: white;
 }
 
 #contentSec2 {
@@ -127,12 +121,27 @@ body {
 	flex-direction: column;
 	gap: 0.5em;
 }
+
+#serTable {
+	border: 5px solid white;
+	margin: 2em;
+	text-align: center;
+	font-size: larger;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 3px solid white;
+	padding: 2em;
+	background-color: #0096a9;
+	color:#E0D330;
+}
 /* FOOTER */
 
 #footer {
 	clear:both;
 	position: relative;
-	top: 100%;
+	top: auto;
   	width: 100%;
 	text-align: center;
 	background-color: #0096a9;
