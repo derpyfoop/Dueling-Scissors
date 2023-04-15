@@ -1,50 +1,120 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="author" content="Matthew Ward"/>
-	<meta charset="UTF-8"/>
-	<title>Template</title>
-	<link rel="stylesheet" href="../styles.css"/>
+	<meta name="author" content="Matthew Ward" />
+	<meta charset="UTF-8" />
+	<title>Appointments</title>
+	<link rel="stylesheet" href="../styles.css" />
 	<!-- Using a font from google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
-	<link rel="icon" href="../images/duelingScissors.svg"/>
+	<link rel="icon" href="../images/duelingScissors.svg" />
 </head>
+
 <body>
 	<div id="crt">
 		<!-- HEADER SECTION -->
 		<div id="header">
-			<img src="../images/duelingScissors.svg" alt="Dueling Scissors"/>
+			<img src="../images/duelingScissors.svg" alt="Dueling Scissors" />
 			<h1>Dueling Scissors</h1>
 		</div>
 
 		<!-- MENU SECTION -->
 		<div id="menu">
 			<ul id="menuLinks">
-				<a href="../index.html"><li>Home</li></a>
-				<a href="services.html"><li>Services</li></a>
-				<a href="appointment.html"><li>Appointments</li></a>
+				<a href="../index.html">
+					<li>Home</li>
+				</a>
+				<a href="services.html">
+					<li>Services</li>
+				</a>
+				<a href="appointment.html">
+					<li>Appointments</li>
+				</a>
 			</ul>
 		</div>
 
 		<!-- CONTENT SECTION -->
 		<div id="content">
-			<p>Content goes here</p>
+			<form action="bookings@Dueling Scissors.com" method="post">
+
+				<legend>
+					<h2>Appointment Form</h2>
+				</legend>
+				<div id="formContent">
+					<div id="left">
+						<div>
+							<label for="fname">First Name:</label>
+							<input type="text" name="fname" id="fname" placeholder="John" required>
+						</div>
+
+						<div>
+							<p>Is this your first time with us?</p>
+							<br>
+							<input type="radio" name="first" value="Yes" required>Yes
+							<br>
+							<input type="radio" name="first" value="No" required>No
+						</div>
+
+						<div>
+							<label for="tel">Phone#:</label>
+							<input type="tel" name="tel" id="tel" placeholder="+1(246)000-0000" required>
+						</div>
+
+						
+					</div>
+
+					<div id="right">
+						<div>
+							<label for="lname">Last Name:</label>
+							<input type="text" name="lname" id="lname" placeholder="Doe" required>
+						</div>
+
+						<div>
+							<label for="service">Choose the service you want:</label>
+							<br>
+							<select name="servie" id="service" required>
+								<option value="">--Select a service--</option>
+								<option value="Wash">Wash</option>
+								<option value="Braid">Braid</option>
+								<option value="Twists">Twists</option>
+							</select>
+						</div>
+
+						<div>
+							<label for="specifications">Appointment Specifications:</label>
+							<br>
+							<textarea name="specifications" id="specifications" cols="50" rows="5" maxlength="150"
+								placeholder="Explain to us more of what you expect from our service!"></textarea>
+						</div>
+
+					</div>
+
+				</div>
+				<div id="btnCrt">
+					<input id="btn" type="submit" value="Submit">
+					<input id="btn" type="reset" value="Reset">
+				</div>
+			</form>
 		</div>
 
 		<!-- FOOTER SECTION -->
 		<div id="footer">
 			<div id="phone">
 				<p>Call or Whatsapp us at:</br>
-				<img src="../images/whatsapp.svg" alt="Whatsapp icon"/> +1&nbsp;(246)453-2932</p>
+					<img src="../images/whatsapp.svg" alt="Whatsapp icon" /> +1&nbsp;(246)453-2932
+				</p>
 			</div>
 
 			<div id="facebook">
 				<p>Check out our Facebook page:</p>
-				<a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.svg" alt="Facebook icon">Dueling Scissors' Facebook page.</a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.svg"
+						alt="Facebook icon">Dueling Scissors' Facebook page.</a>
 			</div>
 		</div>
 	</div>
 
 </body>
+
 </html>

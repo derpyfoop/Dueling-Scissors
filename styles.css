@@ -27,6 +27,11 @@ body {
 	position: sticky;
 	top:0%;
 	z-index: 2;
+	box-shadow: 0 1px 1px rgba(16,27,30,0.15), 
+				0 2px 2px rgba(16,27,30,0.15), 
+				0 4px 4px rgba(16,27,30,0.15), 
+				0 8px 8px rgba(16,27,30,0.15), 
+				0 16px 16px rgba(16,27,30,0.15);
 }
 
 #header img {
@@ -51,6 +56,9 @@ body {
 	width:15%;
 	background-color: #0096a9;
 	overflow: hidden;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+				rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+				rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #menuLinks {
@@ -100,6 +108,7 @@ body {
 	padding: 2em;
 	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
 	background-color: white;
+	margin: 2em;
 }
 
 #contentSec2 {
@@ -114,6 +123,7 @@ body {
 	gap: 0.5em;
 	background-color: lightgrey;
 	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
+	margin: 2em;
 }
 
 #text {
@@ -135,6 +145,76 @@ th, td {
 	padding: 2em;
 	background-color: #0096a9;
 	color:#E0D330;
+}
+
+#serTable a:link, #serTable a:visited {
+	text-decoration: none;
+	color:#E0D330;
+}
+
+#serTable a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+#serTable a:active {
+	text-decoration: none;
+	color:black;
+}
+
+form {
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+	background-color: #0096a9;
+	color: #E0D330;
+	padding: 2em;
+	border-radius: 5px;
+}
+
+#formContent {
+	display: flex;
+	gap: 10em;
+}
+
+#left, #right {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+}
+
+#tel {
+	margin-bottom: 3.2em;
+}
+
+input[type="text"], input[type="tel"], select, textarea {
+	border-radius: 5px;
+}
+
+#btn {
+	border-radius: 5px;
+	padding: 1em;
+	background-color: black;
+	color: white;
+}
+
+#btn:hover {
+	background-color: #0096a9;
+	color: #E0D330;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+				rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+				rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#btn:active {
+	background-color: white;
+	color: black;
+}
+
+#btn{
+	margin-right: 23.5em;
 }
 /* FOOTER */
 
