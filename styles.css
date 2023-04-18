@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0px;
   	padding: 0px;
   	box-sizing: border-box;
 	font-family: "Avenir Next", "Avenir", sans-serif;
+	height: 100%;
+}
+
+#crt {
+	height: 100%;
 }
 
 /* HEADER */
@@ -34,6 +43,12 @@ body {
 				0 16px 16px rgba(16,27,30,0.15);
 }
 
+#headerLink {
+	text-decoration: none;
+    display: contents;
+    color: currentColor;
+}
+
 #header img {
 	width:5%;
 	border-right: 3px solid #E0D330;
@@ -52,7 +67,7 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	height:100vmax;
+	height:100%;
 	width:15%;
 	background-color: #0096a9;
 	overflow: hidden;
@@ -62,14 +77,14 @@ body {
 }
 
 #menuLinks {
+	position: fixed;
+	top: 50%;
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 	gap: 2em;
 	font-size: larger;
 	font-weight: bolder;
-	position: fixed;
-	top: 50%;
 }
 
 #menuLinks a:link, #menuLinks a:visited {
@@ -92,23 +107,25 @@ body {
 #content {
 	display: flex;
 	flex-direction: column;
-	height: 100vmax;
 	background-image: url("images/background.jpg");
 	background-repeat: repeat;
 	background-size: cover;
+	height: 100%;
 }
 
-#contentSec1, #contentSec3 {
+#contentSec1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	font-size: large;
-	height: 33.3%;
+	height: 40%;
 	padding: 2em;
 	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
 	background-color: white;
 	margin: 2em;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 #contentSec2 {
@@ -118,12 +135,14 @@ body {
 	align-items: center;
 	font-size: large;
 	text-align: right;
-	height: 33.4%;
+	height: 40%;
 	padding: 2em;
 	gap: 0.5em;
 	background-color: lightgrey;
 	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
 	margin: 2em;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 #text {
